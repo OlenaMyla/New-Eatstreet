@@ -7,8 +7,8 @@ public class HomePage extends BasePage{
     public HomePage(WebDriver driver){
         super(driver);
     }
-    public WebElement getSearchField(){
-        return getByXpath("//*[@id=\"input-food-search\"]");
+    public WebElement findSearchField(){
+        return findByXpath("//*[@id=\"input-food-search\"]");
     }
 
 }

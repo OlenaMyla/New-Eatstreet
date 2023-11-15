@@ -14,7 +14,7 @@ public class BasePage {
     public void navigate(String link) {
         driver.get(link);
     }
-    public WebElement getByXpath(String path){
+    public WebElement findByXpath(String path){
         return driver.findElement(By.xpath(path));
     }
 

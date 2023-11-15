@@ -13,7 +13,7 @@ public class ExampleTest extends TestInit{
         HomePage page = new HomePage(getDriver());
         page.navigate("https://eatstreet.com/");
 
-        Assert.assertTrue(page.getSearchField().isDisplayed());
+        Assert.assertTrue(page.findSearchField().isDisplayed());
 
 
     }
