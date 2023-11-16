@@ -10,10 +10,10 @@ public class ExampleTest extends TestInit{
     @Test
     public void testHomePage(){
 
-        HomePage page = new HomePage(getDriver());
-        page.navigate("https://eatstreet.com/");
+        HomePage HomePage = new HomePage(getDriver());
+        HomePage.findByXpath("//*[@id=\"partners\"]/div/div/div[2]/a");
 
-        Assert.assertTrue(page.findSearchField().isDisplayed());
+        Assert.assertTrue(HomePage.findSearchField().isDisplayed());
 
 
     }

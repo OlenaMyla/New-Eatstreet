@@ -20,8 +20,8 @@ public abstract class TestInit {
 
     @BeforeMethod
     public void openBrowser() {
-        WebDriverManager.firefoxdriver().setup();
-        driver.set(new FirefoxDriver());
+        WebDriverManager.chromedriver().setup();
+        driver.set(new ChromeDriver());
     }
 
     public WebDriver getDriver(){
