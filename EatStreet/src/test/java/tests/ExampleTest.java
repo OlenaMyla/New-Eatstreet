@@ -17,5 +17,12 @@ public class ExampleTest extends TestInit{
 
 
     }
+    @Test
+    public void  fineByAddress() throws InterruptedException {
+        HomePage page = new HomePage(getDriver());
+        page.navigate("https://eatstreet.com/");
+        page.inputInSerchField();
+
+    }
 
 }
